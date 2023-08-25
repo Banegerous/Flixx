@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="96x96" href="/favicon/icons8-cinema-stencil-96.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/icons8-cinema-stencil-32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/icons8-cinema-stencil-16.png" />
+      <link rel="icon" type="image/png" sizes="72x22" href="/favicon/icons8-cinema-stencil-72.png" />
+      <!--<link rel="manifest" href="/favicon/manifest.json" />-->
+
     <link rel="stylesheet" href="lib/fontawesome.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/spinner.css" />
@@ -19,14 +26,17 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="logo"><a href="/">FLIXX</a></div>
+        <div class="logo">
+          <img id="logo" src="/favicon/icons8-cinema-stencil-32.png" alt="FLIXX logo">
+          <a href="index.html">FLIXX</a>
+        </div>
         <nav>
           <ul>
             <li>
-              <a class="nav-link" href="/">Movies</a>
+              <a class="nav-link" href="index.html">Movies</a>
             </li>
             <li>
-              <a class="nav-link" href="/shows.html">TV Shows</a>
+              <a class="nav-link" href="shows.html">TV Shows</a>
             </li>
           </ul>
         </nav>
@@ -37,7 +47,7 @@
     <section class="search">
       <div class="container">
         <div id="alert"></div>
-        <form action="/search.html" class="search-form">
+        <form action="search.html" class="search-form">
           <div class="search-radio">
             <input type="radio" id="movie" name="type" value="movie" checked />
             <label for="movies">Movies</label>
